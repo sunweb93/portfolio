@@ -1,6 +1,6 @@
 /* sun_contact.css */
 
-#wrap{position: relative; box-sizing: border-box; width: 100%; height: 100%; background-color: #d0dbe8; background-image: url('../../../img/contact/phone.png'); background-repeat: no-repeat; background-size: auto 80%; background-position: 90%;}}
+#wrap{position: relative; box-sizing: border-box; width: 100%; height: 100%; background-color: #d0dbe8; background-image: url('../../img/contact/phone.png'); background-repeat: no-repeat; background-size: auto 80%; background-position: 90%;}}
 .contact_box>ul,
 .contact_box>ul>li,
 .contact_box>ul>li>p{display: inline-block;}
