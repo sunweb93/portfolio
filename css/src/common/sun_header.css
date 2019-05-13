@@ -1,0 +1,74 @@
+/* sun_header.css */
+
+#wrap{box-sizing: border-box;}
+#headBox{position: fixed; z-index: 100; top: 0; left: 0; background-color: #fff}
+h1{float: left; background-image: url('../../../img/header/sun_logo.svg'); background-position: center; background-repeat: no-repeat;
+ background-size: contain;}
+h1>a{display: block; width: 100%; height: 100%;}
+.gnb{float: left;}
+
+.menu_btn{float: right; margin-top: 5px; width: 30px; height: 30px;}
+.menu_btn button{position: relative; display: block; width: 100%; height: 100%;}
+.menu_btn i{position: absolute; display: block; width: 100%; height: 2px; background: #212e3d; border-radius: 10px;
+  left: 0; transition: 250ms ease-in-out;}
+
+.menu_btn i:nth-child(2) {top: 10%;}
+.menu_btn i:nth-child(3),
+.menu_btn i:nth-child(4){top: 50%; transform: translateY(-50%);}
+.menu_btn i:nth-child(5) {bottom: 10%;}
+
+.menu_btn.open i:nth-child(2) {top: 18px; width: 0%; left: 50%;}
+.menu_btn.open i:nth-child(3) {transform: rotate(45deg);}
+.menu_btn.open i:nth-child(4) {transform: rotate(-45deg);}
+.menu_btn.open i:nth-child(5) {top: 18px; width: 0%; left: 50%;}
+
+.gnb>ul{width: 100%; height: 100%;}
+.gnb>ul>li{width: 100%; height: 40px;}
+.gnb>ul>li:last-child{margin-bottom: 0;}
+.gnb>ul>li>a{display: block; padding-left: 70px; box-sizing: border-box; width: 100%; height: 100%; transition: transform 500ms ease;}
+.gnb>ul>li>a>p{display: inline-block; box-sizing: border-box; width: auto; height: 90%; line-height: 5.092592vh/*55px*/; font-size: 18px; font-family: noto sans KR bold; font-weight: 700;text-transform: uppercase; font-style: italic; color: #222;}
+
+@media screen and (max-width: 800px){
+	.gnb{position: absolute; top: 60px; right: -100vw; width: 300px; height: 100vh; background-color: #fff; transition: 700ms ease}
+	.gnb>ul>li{margin-bottom: 15px;}
+	.gnb>ul>li>a>p{width: 100%; text-align: right; line-height: 30px;}
+	.gnb.open{right: 0;}
+	.gnb{padding: 30px; box-sizing: border-box;}
+
+}
+
+
+@media screen and (max-width: 480px){
+	#wrap{padding-top: 60px;}
+	#headBox{padding: 10px 15px; box-sizing: border-box; width: 100%; height: 60px;}
+	 h1{width: 40px; height: 40px;}
+	 
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px){
+	#wrap{padding-top: 60px;}
+
+	#headBox{padding: 10px 15px; box-sizing: border-box; width: 100%; height: 60px; background-color: #fff}
+	h1{width: 40px; height: 40px;}
+	
+}
+
+@media screen and (min-width: 801px){
+	#wrap{padding: 0 0 0 330px;}
+
+	#headBox{position: fixed; top: 0; left: 0; padding: 40px 70px ; box-sizing: border-box; width: 330px; height: 100%; background-color: #fff}
+	h1{width: 55px; height: 65px;}
+	.menu_btn{display: none;}	
+	.gnb{display: block; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 100%; height: 37.037037vh/*400px*/;}
+	
+	.gnb>ul>li{height: 5.092592vh/*55px*/; margin-bottom: 5.555556vh/*60px*/;}
+	.gnb>ul>li>a:hover{transform: translateX(10px);}
+
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px){
+#wrap{padding: 0 0 0 230px;}
+#headBox{padding: 30px 50px; width: 230px;}
+.gnb>ul>li>a{display: block; padding-left: 50px; box-sizing: border-box; width: 100%; height: 100%; transition: transform 500ms ease;}
+
+}

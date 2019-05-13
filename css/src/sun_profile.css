@@ -1,0 +1,36 @@
+/* sun_profile.css */
+
+#wrap{width: 100%; height: auto; min-height: 100%; background-color: #eaedf2}
+.profile{margin: auto; width: 62.5vw/*1200px*/; height: 88.541666vw/*1700px*/; background-image: url('../../img/profile/resume_for_web.png'); background-size: contain; background-position: top; background-repeat: no-repeat; background-color: #fff; box-shadow: 0 0 1rem rgba(0,0,0,0.2)}
+
+
+@media screen and (max-width: 800px){
+	.profile{margin-top: 60px; width: 82.5vw/*660px*/; height: 402.5vw/*3220px*/; background-image: url('../../img/profile/resume_for_web_mob.png');}
+
+}
+@media screen and (max-width: 480px){
+body>#wrap{padding: 40px 0 }
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px){
+body>#wrap{padding: 60px 0 }
+
+
+
+}
+
+@media screen and (min-width: 801px){
+ 	body>#wrap{padding-top: 60px; padding-bottom: 60px}
+ 		.profile{}
+ 	}
+	
+
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px){
+
+
+
+}
