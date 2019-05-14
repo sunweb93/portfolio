@@ -51,13 +51,13 @@
 
 }
 @media screen and (max-width: 320px){
-	.text{left: 20px;}
-	.link{left: 20px;}
+	
 }
 
 @media screen and (max-width: 480px){
-	.text{bottom: 90px; padding-right: 20px;}
-	.link{bottom: 30px;}
+	.pic{padding: 1rem; box-sizing: border-box;}
+	.text{left: auto; bottom: 90px; padding: 1rem; box-sizing: border-box; width: 90vw; height: auto; max-width: 340px}
+	.link{left: auto; bottom: 30px;}
 	.list{height: 80px;}
 	.list>ul>li{width: 60px; height: 60px;}
 }
