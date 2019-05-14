@@ -5,12 +5,12 @@
 
 
 @media screen and (max-width: 800px){
-	.profile{margin-top: 60px; width: 82.5vw/*660px*/; height: 402.5vw/*3220px*/; background-image: url('../../img/profile/resume_for_web_mob.png');}
+.profile{margin-top: 60px; background-image: url('../../img/profile/resume_for_web_mob.png');}
 
 }
 @media screen and (max-width: 480px){
 body>#wrap{padding: 40px 0 }
-
+.profile{width: 93.75vw/*450px*/; height: 458.333333vw/*2200px*/;}
 
 }
 
@@ -23,7 +23,7 @@ body>#wrap{padding: 60px 0 }
 
 @media screen and (min-width: 801px){
  	body>#wrap{padding-top: 60px; padding-bottom: 60px}
- 		.profile{}
+
  	}
 	
 
