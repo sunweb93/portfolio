@@ -5,12 +5,12 @@
 
 
 @media screen and (max-width: 800px){
-.profile{margin-top: 60px; background-image: url('../../img/profile/resume_for_web_mob.png');}
+.profile{margin-top: 60px;}
 
 }
 @media screen and (max-width: 480px){
 body>#wrap{padding: 40px 0 }
-.profile{width: 93.75vw/*450px*/; height: 458.333333vw/*2200px*/;}
+.profile{width: 93.75vw/*450px*/; height: 458.333333vw/*2200px*/; background-image: url('../../img/profile/resume_for_web_mob.png');}
 
 }
 
