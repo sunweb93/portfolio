@@ -1,15 +1,23 @@
 /* sun_header.css */
+#headBox{position: relative; z-index: 1000; box-sizing: border-box;}
 
-#wrap{box-sizing: border-box;}
-#headBox{position: fixed; z-index: 100; top: 0; left: 0; background-color: #fff}
-h1{float: left; background-image: url('../../../img/header/sun_logo.svg'); background-position: center; background-repeat: no-repeat;
- background-size: contain;}
-h1>a{display: block; width: 100%; height: 100%;}
-.gnb{float: left;}
+a,button{display: block; width: 100%; height: 100%; font-family: 'Noto Sans KR medium'}
+h1{float: left;}
+h1>a>i{display: block; float: left; margin-right: 10px; width: 60px; height: 60px; background-image: url('../../../img/header/sun_logo.png'); background-repeat: no-repeat; background-size: contain; background-position: center;}
+h1>a>p{float: left; text-transform: uppercase; font-size: 24px;}
+.gnb{box-sizing: border-box;}
+.gnb>ul{float: left;}
+.gnb>ul>li{float: left;}
+.gnb>ul>li:last-child{margin-right: 0;}
 
-.menu_btn{float: right; margin-top: 5px; width: 30px; height: 30px;}
+.gnb>ul>li>button>p{transition: color 500ms ease; text-align: center; text-transform: uppercase;
+}
+.gnb>ul>li:hover>button>p{color: #96d2ea;}
+
+/* MENU BUTTON */
+.menu_btn{display: none; float: right; width: 40px; height: 40px;}
 .menu_btn button{position: relative; display: block; width: 100%; height: 100%;}
-.menu_btn i{position: absolute; display: block; width: 100%; height: 2px; background: #212e3d; border-radius: 10px;
+.menu_btn i{position: absolute; display: block; width: 100%; height: 3px; background-color: #fff; border-radius: 10px;
   left: 0; transition: 250ms ease-in-out;}
 
 .menu_btn i:nth-child(2) {top: 10%;}
@@ -22,53 +30,38 @@ h1>a{display: block; width: 100%; height: 100%;}
 .menu_btn.open i:nth-child(4) {transform: rotate(-45deg);}
 .menu_btn.open i:nth-child(5) {top: 18px; width: 0%; left: 50%;}
 
-.gnb>ul{width: 100%; height: 100%;}
-.gnb>ul>li{width: 100%; height: 40px;}
-.gnb>ul>li:last-child{margin-bottom: 0;}
-.gnb>ul>li>a{display: block; padding-left: 70px; box-sizing: border-box; width: 100%; height: 100%; transition: transform 500ms ease;}
-.gnb>ul>li>a>p{display: inline-block; box-sizing: border-box; width: auto; height: 90%; line-height: 5.092592vh/*55px*/; font-size: 18px; font-family: noto sans KR bold; font-weight: 700;text-transform: uppercase; font-style: italic; color: #222;}
 
-@media screen and (max-width: 800px){
-	.gnb{position: absolute; top: 60px; right: -120vw; width: 300px; height: 100vh; background-color: #fff; transition: 700ms ease}
-	.gnb>ul>li{margin-bottom: 15px;}
-	.gnb>ul>li>a>p{width: 100%; text-align: right; line-height: 30px;}
-	.gnb.open{right: 0;}
-	.gnb{padding: 30px; box-sizing: border-box;}
-
+@media screen and (max-width: 768px){
+	#headBox{padding: 10px 20px; width: 100%; height: 60px;}
+	h1>a>i{width: 40px; height: 40px; background-size: 80%}
+	h1>a>p{line-height: 40px; font-size: 18px;}
+	.gnb{width: 100%; height: 100%;}
+	.gnb>ul{position: absolute; left: 0; top: -100vh; padding: 30px; box-sizing: border-box; width: 100%; height: calc(100vh - 60px); background-image: linear-gradient(to left top, #005054, #005066, #004e79, #004886, #433c86); transition: 500ms ease}
+	.gnb>ul>li{width: 100%; height: 25%; font-size: 40px; }
+	.gnb>ul>li>button{position: relative;}
+	.gnb>ul>li>button>p{position: absolute; top: 50%; transform: translateY(-50%);width: 100%; height: auto; font-size: 40px;}
+	.menu_btn{display: block; }
+	.gnb.open>ul{top: 60px;}
 }
 
-
-@media screen and (max-width: 480px){
-	#wrap{padding-top: 60px;}
-	#headBox{padding: 10px 15px; box-sizing: border-box; width: 100%; height: 60px;}
-	 h1{width: 40px; height: 40px;}
-	 
-}
-
-@media screen and (min-width: 481px) and (max-width: 800px){
-	#wrap{padding-top: 60px;}
-
-	#headBox{padding: 10px 15px; box-sizing: border-box; width: 100%; height: 60px; background-color: #fff}
-	h1{width: 40px; height: 40px;}
+@media screen and (min-width: 1281px){
+	#headBox{padding: 45px 0; width: 100%; height: 150px;}
+	.gnb{position: absolute; left: 50%; transform: translateX(-50%); width: 1260px; height: 60px;}
+	h1{margin-right: 280px; width: 180px; height: 60px;}
+	h1 p{height: 100%; line-height: 60px;}
+	.gnb>ul{width: auto; height: 100%;}
+	.gnb>ul>li{margin-right: 20px; width: 180px; height: 100%;}
+	.gnb>ul>li>button>p{line-height: 60px; font-size: 20px;}
 	
 }
 
-@media screen and (min-width: 801px){
-	#wrap{padding: 0 0 0 330px;}
-
-	#headBox{position: fixed; top: 0; left: 0; padding: 40px 70px ; box-sizing: border-box; width: 330px; height: 100%; background-color: #fff}
-	h1{width: 55px; height: 65px;}
-	.menu_btn{display: none;}	
-	.gnb{display: block; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 100%; height: 37.037037vh/*400px*/;}
-	
-	.gnb>ul>li{height: 5.092592vh/*55px*/; margin-bottom: 5.555556vh/*60px*/;}
-	.gnb>ul>li>a:hover{transform: translateX(10px);}
-
-}
-
-@media screen and (min-width: 801px) and (max-width: 1000px){
-#wrap{padding: 0 0 0 230px;}
-#headBox{padding: 30px 50px; width: 230px;}
-.gnb>ul>li>a{display: block; padding-left: 50px; box-sizing: border-box; width: 100%; height: 100%; transition: transform 500ms ease;}
+@media screen and (min-width: 769px) and (max-width: 1280px){
+	#headBox{width: 100%; height: 80px;}
+	.gnb{padding: 15px 30px;width: 100%; height: 100%;}
+	h1>a>i{width: 50px; height: 50px; background-size: 60%}
+	h1>a>p{line-height: 50px; font-size: 18px;}
+	.gnb>ul{float: right; width: 65%; height: 100%;}
+	.gnb>ul>li{width: 25%; height: 100%;}
+	.gnb>ul>li>button>p{line-height: 50px; font-size: 14px;}
 
 }

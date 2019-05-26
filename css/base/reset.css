@@ -1,14 +1,14 @@
 /* reset.css */
 @charset "UTF-8";
 
-html,body{margin:0; padding: 0; width: 100%; height: 100%; font-family: Noto Sans KR Light, sans-serif; font-weight: normal; font-style: normal; line-height: 1.2; color:#333; background-color: #fff;}
-:lang(en) {font-family:'Montserrat', sans-serif}
+html,body{margin:0; padding: 0; width: 100%; height: 100%; font-family: 'Noto Sans KR medium', sans-serif; font-weight: normal; font-style: normal; line-height: 1.2; color:#333; background-color: #fff;}
+:lang(en) {font-family:'Noto Sans KR medium', sans-serif}
   
 h1,h2,h3,h4,h5,h6,div,p,pre,img,ul,ol,li,dl,dt,dd,button,q{margin: 0; padding: 0; border: 0; outline: 0;}
 ul,ol,li{list-style: none;}
 
-a{display: block; color: #555; text-decoration: none;}
-a:focus, button:focus{position:relative; z-index: 800; outline: 0.1rem solid #212e3d; outline-offset: 0.1rem;}
+a{display: block; text-decoration: none;}
+/*a:focus, button:focus{position:relative; z-index: 800; outline: 0.1rem solid #212e3d; outline-offset: 0.1rem;}*/
 
 iframe{border:0;}
 button{border-radius: 0; cursor:pointer; background-color: transparent;}
@@ -19,8 +19,3 @@ hr{border-bottom: 1px solid #333; margin: 0; padding: 0; width: 100%;}
 abbr{text-decoration: none;}
 address{font-style: normal;}
 
-.pc_button>a,
-.pc_button>button{display: block; width: 100%; height: 100%; text-align: center; font-weight: 500; font-size: 16px; line-height: 40px; border-radius: 10px; background-color: #525961; color:#fff; transition: 500ms ease; box-shadow: 0 0rem 1rem rgba(0,0,0,0.1)}
-
-	.pc_button:hover>a,
-	.pc_button:hover>button{background-color: #2d3135;}
