@@ -48,10 +48,12 @@ html,body,p{color: #fff; word-break: keep-all;}
 .modal{position: fixed; top: 0; left: 0; height: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.8); display: none;}
 
 
-.other_ul>li{position: relative; cursor: pointer; box-shadow: 1rem 1rem 1.5rem rgba(0,0,0,0.3); }
+.other_ul>li{position: relative; cursor: pointer; box-shadow: 1rem 1rem 1.5rem rgba(0,0,0,0.3);  margin-bottom: 30px;}
 .other_ul>li>div{background-repeat: no-repeat; background-position: center; background-size: cover; transition: all 500ms ease}
-.other_ul>li:nth-child(1)>div{background-image: url('../../img/main/umbro_banner_01.png');}
-.other_ul>li:nth-child(2)>div{background-image: url('../../img/main/umbro_banner_02.png');}
+.other_ul>li:nth-child(1)>div{background-image: url('../../img/main/banner_01.png');}
+.other_ul>li:nth-child(2)>div{background-image: url('../../img/main/banner_02.png');}
+.other_ul>li:nth-child(3)>div{background-image: url('../../img/main/banner_03.png');}
+.other_ul>li:nth-child(4)>div{background-image: url('../../img/main/banner_04.png');}
 .other_ul>li>button{display: block; width: 100%; height: 100%;}
 .other_ul>li>p{position: absolute; top: 0; left: 0; background-color: #263e60; transition: all 500ms ease}
 .other_ul>li:hover>p{opacity: 1}
@@ -194,7 +196,7 @@ html,body,p{color: #fff; word-break: keep-all;}
 
 /* OTHER WORKS */
 .modal_pic{width: 85%;}
-.other_ul>li{width: 100%; height: 65.104166vw/*500px*/; margin-bottom: 30px;}
+.other_ul>li{width: 100%; height: 65.104166vw/*500px*/;}
 .other_ul>li>p{width: 100%; height: 100%; text-align: center; line-height: 65.104166vw; opacity: 0}
 
 /* CONTACT */

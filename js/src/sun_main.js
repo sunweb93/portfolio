@@ -23,11 +23,17 @@
 			'background-position':'center'});
 		if(thisI == 0){
 			modalPic.css({
-			'backgroundImage':'url(../img/main/umbro_banner_01.png)'});
+			'backgroundImage':'url(../img/main/banner_01.png)'});
 		}else if(thisI ==1){
 			modalPic.css({
-			'backgroundImage':'url(../img/main/umbro_banner_02.png)'});
-		}
+			'backgroundImage':'url(../img/main/banner_02.png)'});
+		}else if(thisI ==2){
+			modalPic.css({
+			'backgroundImage':'url(../img/main/banner_03.png)'});
+		}else if(thisI ==3){
+			modalPic.css({
+			'backgroundImage':'url(../img/main/banner_04.png)'});
+		};
 		modalBox.fadeIn();
 	});
 
